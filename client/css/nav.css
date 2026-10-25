@@ -1,0 +1,166 @@
+ /* :root {
+   --primary: #42c5f5;
+   --colorFont: white;
+   --bk: 42a5f5;
+   --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   --hover: lightblue;
+   --formColor: rgba(176, 224, 230, 0.2);
+   --blackBasic: black
+ } */
+
+
+ .hamburger {
+   display: none;
+   font-size: 2rem;
+   cursor: pointer;
+   padding: 10px;
+ }
+
+ .mobile-menu {
+   display: none;
+   flex-direction: column;
+   background-color: var(--bg, #fff);
+   position: absolute;
+   top: 60px;
+   right: 20px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   padding: 16px;
+   border-radius: 8px;
+   z-index: 1000;
+ }
+
+ .mobile-menu a {
+   padding: 10px;
+   text-decoration: none;
+   color: var(--text-color, #333);
+   font-family: var(--font);
+ }
+
+ /* הצגת התפריט במסך קטן בלבד */
+ @media (max-width: 1300px) {
+   .hamburger {
+     display: block;
+   }
+ }
+
+
+ .user-dropdown {
+   position: relative;
+   display: inline-block;
+   direction: rtl;
+ }
+
+ .user-dropdown p {
+   margin: 0;
+   cursor: pointer;
+ }
+
+ .user-menu {
+   display: none;
+   position: absolute;
+   right: 0;
+   top: 100%;
+   background-color: #fff;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 100;
+   border-radius: 6px;
+   padding: 10px 0;
+ }
+
+ .user-menu a {
+   color: #333;
+   padding: 10px 16px;
+   display: block;
+   text-decoration: none;
+   font-size: 14px;
+ }
+
+ .user-menu a:hover {
+   background-color: #f0f0f0;
+ }
+
+ .user-dropdown:hover .user-menu {
+   display: block;
+ }
+
+
+ .modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(4px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000;
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ .modal-content {
+   background-color: var(--formColor);
+   border-radius: 16px;
+   padding: 2rem;
+   width: 90%;
+   max-width: 500px;
+   font-family: var(--font1);
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+   color: var(--blackBasic);
+   animation: fadeIn 0.3s ease-in-out;
+ }
+
+ .modal-content input[type="text"] {
+   width: 100%;
+   padding: 0.75rem;
+   border: 1px solid var(--primary);
+   border-radius: 8px;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   font-family: var(--font1);
+   transition: border-color 0.3s;
+ }
+
+ .modal-content input[type="text"]:focus {
+   outline: none;
+   border-color: var(--bk);
+   box-shadow: 0 0 5px var(--hover);
+ }
+
+ #closeSearchBtn,#search {
+   background-color: var(--primary);
+   color: var(--colorFont);
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   float: left;
+   margin-left: 10px;
+ }
+
+ #closeSearchBtn:hover ,#search:hover{
+   background-color: var(--hover);
+   color: var(--blackBasic);
+ }
+
+ 
+
+ /* אנימציה */
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: scale(0.9);
+   }
+
+   to {
+     opacity: 1;
+     transform: scale(1);
+   }
+ }

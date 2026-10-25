@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fly.css">
+    <title>Document</title>
+</head>
+
+<body id="userC">
+    <header></header>
+    <div id="space"></div>
+    <div id="containerT1">
+
+        <div id="rightControll">
+            <h2>חיפוש משתמש</h2>
+            <form>
+                <input type="text" id="name" required placeholder="שם" />
+                <input type="email" id="description" placeholder="אימייל" />
+                <input type="text" id="statusEmail" placeholder="סטטוס אימייל" />
+                <div id="formBtnsTbl">
+                    <button id="save" type="submit">חפש</button>
+                    <button type="reset">נקה</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div id="leftControll">
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>שם משתמש</th>
+                        <th>אימייל</th>
+                        <th>סיסמה</th>
+                        <th>סטטוס אימייל</th>
+                        <th>סטטוס בקרה</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- כאן תתווסף התוכן דינמית -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    
+    <script src="../js/header.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/users.js"></script>
+     <script src="../js/globalUser.js"></script>
+ 
+</body>
+
+</html>

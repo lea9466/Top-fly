@@ -1,0 +1,69 @@
+/* :root {
+  --primary: #42c5f5;
+  --colorFont: white;
+  --bk: 42a5f5;
+  --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --hover: lightblue;
+  --formColor: rgba(176, 224, 230, 0.2);
+  --blackBasic: black
+} */
+
+#category_link {
+  /* display: flex; */
+  margin-top: 30px;
+  /* flex-direction:; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.destination-card {
+  background-color: var(--bk);
+  border-radius: 12px;
+  /* שיהיה יותר מעוגל */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  /* במקום אחוזים */
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: var(--colorFont);
+  font-family: var(--font1);
+  margin: 0;
+  /* אל תשתמש ב־margin auto ב־flex row */
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  /* background-color: var(--primary); */
+}
+
+.destination-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.destination-info {
+  padding: 1rem;
+}
+
+.destination-name {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.destination-category {
+  font-size: 1rem;
+  color: var(--blackBasic);
+  margin: 0.3rem 0;
+}
+
+.destination-description {
+  font-size: 0.95rem;
+  color: var(--blackBasic);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}

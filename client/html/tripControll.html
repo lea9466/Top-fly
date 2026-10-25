@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fly.css">
+    <title>טיולים</title>
+</head>
+
+<body>
+    <header></header>
+    <div id="space"></div>
+    <div id="containerT1">
+        <div id="rightControll">
+            <h2>הוספה / עריכת יעד</h2>
+            <form id="FotmOb">
+
+                <!-- <label>שם:</label> -->
+                <input type="text" id="name" required placeholder="שם" />
+
+                <!-- <label>תיאור:</label> -->
+                <!-- <input type="text" id="description" placeholder="תאור" /> -->
+                <textarea rows="10" cols="150" placeholder="תאור" id="description"></textarea>
+                <input type="text" id="start" placeholder="תאריך יציאה" />
+                <input type="text" id="end" placeholder="תאריך חזרה" />
+                <input type="text" id="hotel" placeholder="בית מלון/מקום שהייה" />
+                <select id="category" name="category" class="styled-select">
+                    <option value="" disabled selected hidden>בחר קטגוריה</option>
+                </select><br>
+
+                <!-- <label>תמונה:</label> -->
+                <input type="file" id="image" accept="image/*" />
+                <br />
+                <img id="preview" src="" alt="תצוגה מקדימה"
+                    style="max-width: 200px; display: none; margin-top: 10px;" />
+
+                <div id="formBtnsTbl">
+                    <button id="save" type="submit">שמור</button>
+                    <button type="reset">נקה</button>
+
+                </div>
+
+            </form>
+
+        </div>
+        <div id="leftControll">
+            <!-- <h1>רשימת הטיולים</h1> -->
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>שם טיול</th>
+                        <th>תיאור</th>
+                        <th>מקום</th>
+                        <th>תמונה</th>
+                        <th>התחלה</th>
+                        <th>סיום</th>
+                        <th>קטגוריה</th>
+                        <th>עריכה/מחיקה</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- כאן תתווסף התוכן דינמית -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/trip.js"></script>
+    <script src="../js/header.js"></script>
+     <script src="../js/globalUser.js"></script>
+</body>
+
+</html>

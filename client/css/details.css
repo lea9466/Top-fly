@@ -1,0 +1,109 @@
+/* :root {
+    --primary: #42c5f5;
+    --secondary: #e3f2fd;
+    --text-color: #333;
+    --bg: #ffffff;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --radius: 16px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+#dt{
+  width: 100%;
+}
+
+/* מיכל ראשי */
+.trip-detail-container {
+    width: 65%;
+    margin: 40px auto;
+    background-color: var(--bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    font-family: var(--font);
+    color: var(--text-color);
+    height: auto;
+}
+
+/* תמונה עליונה */
+.trip-detail-image {
+    width: 100%;
+    /* height: 500px; */
+    object-fit: cover;
+    display: block;
+}
+
+/* תוכן פנימי */
+.trip-detail-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* כותרת */
+.trip-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* פריט אחד */
+.trip-info-item {
+    background-color: var(--secondary);
+    padding: 16px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* תווית */
+.trip-info-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+/* טקסט */
+.trip-info-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+.trip-detail-button {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: var(--font);
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 20%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+}
+
+.trip-detail-button:hover {
+    background-color: #2aaedb;
+    transform: scale(1.03);
+}
+
+/* רספונסיביות */
+@media (max-width: 600px) {
+    .trip-detail-image {
+        height: 200px;
+    }
+
+    .trip-title {
+        font-size: 1.6rem;
+    }
+
+    .trip-info-text {
+        font-size: 0.95rem;
+    }
+}

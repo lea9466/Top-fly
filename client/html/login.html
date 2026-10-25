@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fly.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <title>התחברות</title>
+</head>
+
+<body id="login">
+    <header></header>
+    <div id="image" style="display: none;"></div>
+    <div id="space"></div>
+    <div class="login-container">
+        <h2>ברוך הבא</h2>
+        <form id="f">
+            <label class="logi" for="name">שם מלא</label>
+            <input class="logi" type="text" id="name" />
+
+            <label for="email">אימייל</label>
+            <input type="email" id="email" />
+
+            <label for="password">סיסמה</label>
+            <input type="password" id="password" />
+
+            <div id="doar">
+                <input class="logi" type="checkbox" name="ck" id="ck">
+                <label class="logi" for="ck">אני רוצה לקבל עדכונים והטבות למייל</label>
+            </div>
+
+            <button id="sum" type="submit">התחבר</button>
+        </form>
+        <p>
+            <a href="#" id="pass">שכחתי סיסמא</a>
+        </p>
+        <p>
+            <span id="sp">אין</span> לך חשבון? <a href="#" id="log">הרשם עכשיו</a>
+        </p>
+    </div>
+
+    
+    <script src="../js/utils.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/header.js"></script>
+     <script src="../js/globalUser.js"></script>
+</body>
+
+</html>

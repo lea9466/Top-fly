@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/fly.css"> -->
+    <link rel="stylesheet" href="../css/userArea.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <div id="space"></div>
+    <div id="containerT1">
+        <div id="rightControll">
+            <form id="updateF" class="update-form">
+                <h2>עדכון פרטי משתמש</h2>
+
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">אימייל</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">מעוניין לקבל ניוזלייטר</label>
+                </div>
+
+                <label for="password">סיסמה</label>
+                <div class="input-wrapper">
+                    <input type="password" id="lust_password" name="password" placeholder="סיסמא ישנה" required>
+                    <span class="toggle-password">👁️</span>
+                </div>
+
+                <input type="password" id="password" name="password" placeholder="הכנס סיסמה חדשה" >
+                <input type="password" id="passwordTrue" name="password" placeholder="אימות סיסמא" >
+
+
+                <button type="submit">עדכן פרטים</button>
+            </form>
+
+        </div>
+        <div id="leftControll">
+            <form class="contact-admin-form">
+                <h2>שלח הודעה לסוכן שלך</h2>
+
+                <!-- <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">אימייל</label>
+                <input type="email" id="email" name="email"> -->
+
+                <label for="message">תוכן ההודעה</label>
+                <textarea id="message" name="message" rows="5" placeholder="כתוב כאן את ההודעה שלך..."></textarea>
+
+                <button type="submit" id="chatWithManager">שלח הודעה</button>
+            </form>
+            <form class="favorite-destinations-form">
+                <h2>ההודעות הקודמות שלי</h2>
+                <div id="messagesContainer"></div>
+
+                
+            </form>
+
+
+
+        </div>
+    </div>
+
+ 
+    <script src="../js/header.js"></script>
+    <script src="../js/utils.js"></script>
+    <script  src="../js/userArea.js"></script>
+     <script src="../js/globalUser.js"></script>
+</body>
+
+</html>

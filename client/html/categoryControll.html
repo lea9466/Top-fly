@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fly.css">
+    <title>קטגוריות</title>
+</head>
+
+<body>
+    <header></header>
+    <div id="space"></div>
+    <div id="containerT1">
+
+        <div id="rightControll">
+            <h2>הוספה / עריכת קטגוריה</h2>
+            <form id="FotmOb">
+
+                <!-- <label>שם:</label> -->
+                <input type="text" id="name" required placeholder="שם" />
+
+                <!-- <label>תיאור:</label> -->
+                <input type="text" id="description" placeholder="תאור" />
+                <textarea rows="10" cols="150" placeholder="אינפורמציה" id="information"></textarea>
+
+                <!-- <label>תמונה:</label> -->
+                <input type="file" id="image" accept="image/*" placeholder="תמונה" />
+                <br />
+                <img id="preview" src="" alt="תצוגה מקדימה"
+                    style="max-width: 200px; display: none; margin-top: 10px;" />
+                <div id="formBtnsTbl">
+                    <button id="save" type="submit">שמור</button>
+                    <button type="reset">נקה</button>
+                </div>
+
+            </form>
+
+
+
+        </div>
+        <div id="leftControll">
+            <!-- <h1>רשימת קטגוריות</h1> -->
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>שם הקטגוריה</th>
+                        <th>תיאור</th>
+                        <th>אינפורמציה</th>
+                        <th>תמונה</th>
+                        <th>עריכה/מחיקה</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- כאן תתווסף התוכן דינמית -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+   
+    <script src="../js/utils.js"></script>
+    <script src="../js/categories.js"></script>
+    <script src="../js/header.js"></script>
+     <script src="../js/globalUser.js"></script>
+</body>
+
+</html>

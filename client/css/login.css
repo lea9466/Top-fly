@@ -1,0 +1,127 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #dbeafe, #bae6fd);
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    width: 100%;
+} */
+/* :root {
+    --primary: #42c5f5;
+    --colorFont: white;
+    --bk: 42a5f5;
+    --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --hover: lightblue;
+    --formColor: rgba(176, 224, 230, 0.2);
+    --blackBasic: black
+} */
+
+.login-container {
+    /* margin-top: 50px; */
+    background-color:var(--colorFont);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--blackBasic);
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--hover);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login-container input:focus {
+    border-color: var(--hover);
+    box-shadow: 0 0 6px rgba(122, 146, 200, 0.25);
+}
+
+.login-container button {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary);
+    color: var(--colorFont);
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 98%;
+}
+
+
+.login-container button:hover {
+    background-color: var(--hover);
+}
+
+.login-container p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.login-container a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+label.logi,
+.logi {
+    display: none;
+}
+
+#f {
+    width: 70%;
+}
+
+#doar {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#ck {
+    width: 22px;
+
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        padding: 2.5rem 3rem;
+    }
+
+    .login-container h2 {
+        font-size: 2.2rem;
+    }
+}
